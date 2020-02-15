@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-Montserrat: 'Montserrat', sans-serif;
+    --font-Poppins: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    text-align: center;
+}
+
+.brandName{
+    padding-top: 7em;
+}
+
+.summer{
+    margin-bottom: 15px;
+    font-family: var(--font-Montserrat);
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 3.48px;
+    word-spacing: 0;
+    vertical-align: baseline;
+}
+
+.backpack{
+    line-height: 41.8px;
+    font-size: 25px;
+    font-family: var(--font-Poppins);
+    word-spacing: 0;
+    vertical-align: baseline;
+    letter-spacing: normal;
+}
+
+.virtual{
+    margin-top: 8em;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+}
+
+.virtual .details:nth-child(1) .Bags{
+    width: 23vw;
+    height: 23vw;
+    background: url(./img/brown\ bag.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.virtual .details:nth-child(2) .Bags{
+    width: 23vw;
+    height: 23vw;
+    background: url(./img/city\ Bag.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.virtual .details:nth-child(3) .Bags{
+    width: 23vw;
+    height: 23vw;
+    background: url(./img/shoulder\ Bag.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.virtual .details:nth-child(4) .Bags{
+    width: 23vw;
+    height: 23vw;
+    background: url(./img/basket\ bag.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+.icons{
+    width: 120px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    margin-left: 7em;
+    margin-top: -9em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    display: none;
+}
+
+.icons div{
+    width: 33px;
+    height: 30px;
+    background: url(./img/heart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.icons div:nth-child(2){
+    width: 33px;
+    height: 30px;
+    background: url(./img/view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.icons div:nth-child(3){
+    width: 33px;
+    height: 30px;
+    background: url(./img/shopping-bag.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 3px;
+    margin-top: 10px;
+}
+
+.Bags:hover + .icons{
+    display: grid;
+}
+
+.name{
+    font-family: var(--font-Poppins);
+    font-size: 17px;
+}
+
+.price{
+    font-family: var(--font-Montserrat);
+    font-size: 15px;
+}
